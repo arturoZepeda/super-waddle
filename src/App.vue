@@ -3,8 +3,8 @@ import { ref, computed, reactive } from 'vue';
 import Alerta from './components/Alerta.vue';
 import Loading from './components/Loading.vue';
 import useCripto from './composables/useCripto.js';
-
-const { monedas, criptomonedas, obtenCotizacion, cotizacion, cargando } = useCripto();
+const cotizacion = ref({});
+const { monedas, criptomonedas, obtenCotizacion, cargando } = useCripto();
 
 const error = ref(false);
 const cotizar = reactive({
