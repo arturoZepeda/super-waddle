@@ -1,8 +1,7 @@
 import { ref, onMounted } from 'vue';
 
 export default function useCripto() {
-    
-    
+    const cotizacion = ref({});
     const cargando = ref(false);
     const criptomonedas = ref([]);
     const monedas = ref([
